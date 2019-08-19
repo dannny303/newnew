@@ -1,0 +1,139 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Neusteters Projects
+      <small>Past, present and future</small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Neusteters Projects</li>
+    </ol>
+
+    <div class="row">
+      <div class="col-lg-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="/static/20180808_121943.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Commercial Space Redevelopment</a>
+            </h4>
+            <p class="card-text">So long Rite-Aid, hello CVS. Unfortunatly most of the antique ornate plaster work was removed during the renovation. On the plus side we have a clean, mechanically effecent new downstaris neighbor that sells beer! </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="/static/20180808_122049.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Plumbing Retrofit</a>
+            </h4>
+            <p class="card-text">The main drain at Neusteters is 40 years old. First phase of the plumbing was done during the CVS remodal. Second phase is approaching. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="/static/Stout Street Canopy  Metal Removal_1..31.19.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Canopy Repair</a>
+            </h4>
+            <p class="card-text">The canopys are over a hundred years old. They are very rusty. New glass being installed over 16th Street. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="/static/20190419_091444.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Parking garage storage area ceiling</a>
+            </h4>
+            <p class="card-text">The ceiling under Stout street sidewalk is crumbling in locations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="/static/20160611_111136.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Cooling Tower Replacement</a>
+            </h4>
+            <p class="card-text">New Cooling towers being installed. June 2016. Cooling towers provide cold water to the building main loop system, which cicrles the build providing cooled water to units A/C furnace.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="/static/20181031_123731.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">HVAC Condensation Drain Retrofit</a>
+            </h4>
+            <p class="card-text">Condinsation re-routing. Each units A/C furnace has a condinsation drain that drains any moisture that built up during Air condintiong. The current drain is 3/4 of inch and clogges frequently. New larger size pipes with clean out access are being installed throughout the second floor residentail units.
+              Process requires removal of kitchen cabnet and installtion of larger drain pipe. Cabnet is re-installed with access door for cleanouts. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+
+    {% endblock %}
+  </div>
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+  <div id="footer">
+      {% block footer %}
+        {{ super() }}
+      {% endblock %}
+  </div>
+</body>
+
+</html>

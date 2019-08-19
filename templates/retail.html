@@ -1,0 +1,105 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">
+  {% block content %}
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Retail items
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Services</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-lg-3 mb-4">
+        <div class="card h-100">
+          <h3 class="card-header">Air Filters</h3>
+          <div class="card-body">
+            <div class="display-4">$6 - $12</div>
+            <div class="font-italic">Non-Pleated - Pleated</div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">The furnace air filter is an odd size 11 3/4 x 31 3/4 x 1. Neusteters sells two styles, pleated and non-pleated. We recommended replacement every three months but depends on the environment.</li>
+            <li class="list-group-item">
+              <a href="#" class="btn btn-primary">Retail PDF</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-4">
+        <div class="card h-100">
+          <h3 class="card-header">Access Fobs</h3>
+          <div class="card-body">
+            <div class="display-4">$10</div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">A small serial numbered access key provides residents secure entry to the buildings main door on 16th Street and our back door at Stout Street.</li>
+            <li class="list-group-item">
+              <a href="#" class="btn btn-primary">Retail PDF</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-4">
+        <div class="card h-100">
+          <h3 class="card-header">Garage Openers</h3>
+          <div class="card-body">
+            <div class="display-4">$50</div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Provided to residents that have a parking space in the basement garage. Garage doors open with a click of the remote and close automatcily after 10-15 seconds.</li>
+            <li class="list-group-item">
+              <a href="#" class="btn btn-primary">Retail PDF</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-4">
+        <div class="card h-100">
+          <h3 class="card-header">Mailbox re-key</h3>
+          <div class="card-body">
+            <div class="display-4">$5</div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">New residents might not get mail keys. Have the building manager schedule a time to meet with the mail handler to re-key the mailbox.</li>
+            <li class="list-group-item">
+              <a href="#" class="btn btn-primary">Retail PDF</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  {% endblock %}
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <div id="footer">
+      {% block footer %}
+        {{ super() }}
+      {% endblock %}
+  </div>
+</body>
+
+</html>

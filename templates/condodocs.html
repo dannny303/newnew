@@ -1,0 +1,117 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">{% block content %}
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Condominium Bylaws
+      <small>Rules and Regulations</small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/index">Home</a>
+      </li>
+      <li class="breadcrumb-item active">R&R</li>
+    </ol>
+
+    <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Rules and Regulations regarding Home Occupations</a>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-body">
+            <p>The following rules and regulations have been adopted by the Neusteters Building Condominium Association, INC("Association") pursuant to Colorado statutes, for Home Occupations.</p>
+            <ol>
+                <li> The condominium Declaration for Neusteters Building, DEfinitions (Section1,y) states " ' Residential Unit' shall mean those UNits established herein, as delineated on the Condominium Map, which shall be used and occupied soley for residential purposees."</li>
+                <li></li>
+          </div>
+          <a href="/static/NEU Rule & Reg - Home Occupations 12.13.07.pdf" class="btn btn-primary">Download PDF</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingTwo">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Rules and Regulations regarding Rental of Residential Units</a>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+          <a href="/static/NEURuleRegRentals05.21.15.pdf" class="btn btn-primary">Download PDF</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" role="tab" id="headingThree">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Rules and Regulations regarding Move in/out and Large Deliveries</a>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+          <a href="/static/NEURuleRegMoveIn02.20.07.pdf" class="btn btn-primary">Download PDF</a>
+        </div>
+      </div>
+      <div class="card">
+            <div class="card-header" role="tab" id="headingFour">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Rules and Regulations regarding Architectural Changes</a>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+              <a href="/static/NEUDesignReviewRequest.pdf" class="btn btn-primary">Download PDF</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingFive">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Rules and Regulations regarding Trash</a>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              
+            </div>
+              <a href="/static/NEURuleRegTrash11.15.07.pdf" class="btn btn-primary">Download PDF</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  <!-- /.container -->
+
+ 
+    {% endblock %}
+  <!-- /.container -->
+  <!-- Footer -->
+  <div id="footer">
+    {% block footer %}
+      {{ super() }}
+    {% endblock %}
+  </div>
+ </body>
+
+</html>
+

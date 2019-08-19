@@ -1,0 +1,82 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Laundry
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Laundry</li>
+    </ol>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Laundry Machines</h2>
+        <ul>
+        <li>Wash Cycle cost $1.75</li>
+          <ul>
+            <li>Normal Hot - 41min</li>
+            <li>Normal Warm - 39min</li>
+            <li>Perm Warm - 37min</li>
+            <li>Delicates Cold - 35min</li>
+          </ul>
+        <li>Dry Cycle cost $1.50</li>
+            <ul>
+              <li>High Temp - 60min</li>
+              <li>Me</li>
+            </ul>
+        </ul>
+        <p>Washers and dryers are owned by CSC ServiceWorks. Each residential floor has two washers and two dryers. Credit card and quarters excepted. Please set a reminder for alloted time. Unattended clothes can be moved by other residents doing laundry.</p>
+        <p>After washer use, please leave door open to allow inside of machine to dry.</p>
+        <p>Unfortunately the laundry machines don't always work perferctly. If there is an error with payment please contact CSC SerivceWorks, 1-877-264-6622, for a full refund.</p>
+      </div>
+      <div class="col-lg-6">
+          <img class="img-fluid rounded" src="/static/20190617_200434.jpg" alt="">
+      </div>
+    </div>
+        <hr>
+    <div class="row">
+      <div class="col-md-3">
+        <img class="img-fluid rounded" src="/static/Resized_20180213_100918_8576.jpeg" alt="">
+        <p>Please don't use laundry detergent pods in detergent tray! They do not completly dissolve.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid rounded" src="/static/20190620_114852.jpg" alt="">
+        <p>Please be kind and remove your spent lent.</p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid rounded" src="/static/20190620_111434.jpg" alt="">
+        <p>Bar code can be used to report faulty machines via the CSC app. </p>
+      </div>
+    </div>
+        
+     <hr>
+    {% endblock %}
+  <!-- /.container -->
+  <!-- Footer -->
+  <div id="footer">
+    {% block footer %}
+      {{ super() }}
+    {% endblock %}
+  </div>
+ </body>
+
+</html>
+

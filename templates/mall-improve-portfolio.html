@@ -1,0 +1,107 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">The Future of the 16th Street Mall
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">The 16th Street Mall experience</li>
+    </ol>
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+
+      <div class="col-md-8">
+        <img class="img-fluid" src="/static/denver_gallery.gallery.1170.474.high.6.jpg" alt="">
+      </div>
+      
+      <div class="row">
+      <div class="col-md">
+        <h3 class="my-3">The 16th Street Mall experience</h3>
+        <p>Downtown Denver’s 16th Street Mall (Mall) is Denver’s busiest transit artery and premier public
+            space, one of the longest pedestrian and transit malls in the world and designated as a transit
+            fixed guideway. The Mall was designed in the late 1970s as a transit and pedestrian mall by the
+            renowned architectural firms of I.M. Pei & Partners and Hanna/Olin. Construction of the Mall
+            was completed in 1982, with an iconic diamond-patterned granite paver surface inspired by the
+            design of a Navajo blanket, resembling a diamondback rattlesnake skin. Today, the transit
+            shuttle bus route along the Mall, known as the Free MallRide, eliminates approximately
+            870 daily bus trips from Downtown Denver streets, reducing traffic congestion (Marsella, 2008,
+            pers. comm.). The Mall energizes the downtown business environment with a unique
+            pedestrian- and transit-oriented public space.</p>
+        
+            <h3 class="my-3">Project Details</h3>
+            <ul>
+              <li>Address deteriorating infrastructure to allow reasonable maintenance frequency and
+                costs to businesses and taxpayers.</li>
+              <li>Improve safety for pedestrians and vehicles.</li>
+              <li>Improve mobility for desired transit operations and for all users.</li>
+              <li>Increase opportunities for public use of the Mall as an iconic civic space for leisure,
+                commerce, and tourism.</li>
+              <li><a href="https://www.denvergov.org/content/denvergov/en/community-planning-and-development/planning-and-design/plans-in-progress/the-mall-experience.html">Denver Government Mall Experience Webpage</href></li>
+            </ul>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <!-- Related Projects Row -->
+    <h3 class="my-4">Related Projects</h3>
+
+    <div class="row">
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="/static/20190516_135633.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="/static/20160712_091052.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="/static/Screenshot 2019-05-13 12.21.09.png" alt="">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="/static/Screenshot 2019-05-13 12.13.14.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+    <!-- /.row -->
+    {% endblock %}
+  <!-- /.container -->
+  <!-- Footer -->
+  <div id="footer">
+    {% block footer %}
+      {{ super() }}
+    {% endblock %}
+  </div>
+ </body>
+
+</html>
+

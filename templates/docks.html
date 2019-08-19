@@ -1,0 +1,76 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Loading Docks
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Loading Dock options</li>
+    </ol>
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+        <div class="col-lg-4">
+          <h2>Global Pacific Properties Basement loading dock</h2>
+          <hr>
+          <p><b>$20 fee</b></p>
+          <p>GPP basement loading dock can accommodate large moving trucks and trailers. The garage entrance is 14ft tall 
+            located on 15th Street, after California before Stout. Access to Neusteters is through the inner garage door with 
+            the freight elevator 50 yards from dock. Pass can be purchased from GPP office at 1520 Stout St.</p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid rounded" src="/static/20190617_175410.jpg" alt="">
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid rounded" src="/static/Resized952019052995144229959507.jpg" alt="">
+        </div>
+      </div>
+      <hr>
+      <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="img-fluid rounded" src="/static/20190618_100941dockdoorcopy.jpeg" alt="">
+        </div>
+        <div class="col-lg-4">
+            <img class="img-fluid rounded" src="/static/Resized95201905299514394695913.jpg" alt="">
+        </div>
+        <div class="col-lg-4">
+            <h2>Alley-way Loading Dock</h2>
+            <hr>
+            <p><b>Free to use but often blocked</b></p>
+            <p>Alley way is free to use but during the week it is often blocked by delivery trucks. There are also barriers 
+              that have been added at 15th St. Barriers are bendable and can be driven over. Access is through our 
+              trash/recycling dock with freight elevator 10ft from dock. Its beneficial that the moving truck has a side door.</p>
+        </div>
+    </div>
+    <hr>
+    <!-- /.row -->
+    {% endblock %}
+  <!-- /.container -->
+  <!-- Footer -->
+  <div id="footer">
+    {% block footer %}
+      {{ super() }}
+    {% endblock %}
+  </div>
+ </body>
+
+</html>

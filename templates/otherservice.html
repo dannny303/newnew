@@ -1,0 +1,91 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">
+  {% block content %}
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Other Services
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Pricing</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h3 class="card-header">Ladder Use</h3>
+          <div class="card-body">
+            <div class="display-4">Free</div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">We have 5 different ladders. 6ft, 10ft, 12ft, 15ft and a foldable type. Please sign ladder release form and contact building manager for the combination.</li>
+            <li class="list-group-item">
+              <a href="#" class="btn btn-primary">Ladder Waiver</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h3 class="card-header">Loading Docks</h3>
+            <div class="card-body">
+                <div class="display-4">$20 - Free</div>
+                <div class="font-italic">GPP Basement Dock - Alley Dock</div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Basement loading dock is managed by Global Pacific Properties. They charge a $20 usage fee. The alley-way dock can be used for free but is often blocked.</li>
+            <li class="list-group-item">
+              <a href="/docks" class="btn btn-primary">More info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h3 class="card-header">Handtruck</h3>
+          <div class="card-body">
+            <div class="display-4">Free</div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Moving stuff in or out? Work smarter and not harder, barrow the buildings dolly. Contact manager for combination code.</li>
+            <li class="list-group-item">
+              <a href="/contact" class="btn btn-primary">Contact info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  {% endblock %}
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <div id="footer">
+      {% block footer %}
+        {{ super() }}
+      {% endblock %}
+  </div>
+</body>
+
+</html>

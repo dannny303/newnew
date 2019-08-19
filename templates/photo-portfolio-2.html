@@ -1,0 +1,144 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Portfolio 1
+      <small>Subheading</small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">photo Portfolio 2</li>
+    </ol>
+
+    <!-- Project One -->
+    <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/static/Screenshot 2019-05-13 12.21.09.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>16th St. at Night 1913?</h3>
+          <p>Lights illuminate the 16th St. Neusteter Co. window displays on left.  </p>
+          <a class="btn btn-primary" href="#">View Project
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Two -->
+    <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/static/Exterior 1924.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>1924 Neusteter Co. Expansion</h3>
+          <p>The Neusteter Co. opened a "new and enlarged establishment" at 720 16th Street on September 6, 1924. Workers can be seen boarding up the property and working on the canopy.</p>
+          <a class="btn btn-primary" href="#">View Project
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Three -->
+    <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/static/Screenshot 2019-05-13 12.22.18.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>1920-1930?</h3>
+          <p>Back and white photo of Neusteter Co. from rooftop of Barth Building. Coronado Building in background.</p>
+          <a class="btn btn-primary" href="#">View Project
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Project Four -->
+    <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/static/Screenshot 2019-05-15 11.17.46.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <h3>1920's</h3>
+          <p>Dressing room inside The Neusteter Co.</p>
+          <a class="btn btn-primary" href="#">View Project
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="/portfolio">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/portfolio2">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="/portfolio3">3</a>
+          </li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  {% endblock %}
+  </div>
+ 
+</div>
+</div>
+<!-- /.container -->
+<!-- Footer -->
+<div id="footer">
+    {% block footer %}
+      {{ super() }}
+    {% endblock %}
+</div>
+</body>
+
+</html>

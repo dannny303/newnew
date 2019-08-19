@@ -1,0 +1,126 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">
+  {% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">About
+      <small>Neusteters</small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">About</li>
+    </ol>
+
+    <!-- Intro Content -->
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="/static/extra_large_a5271bbc8553763b5e64af24dd0e74db.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>The Residences at Neusteters</h2>
+        <p>The Neusteter building has a long history, 107 years to be exact. Originally the building was a three story department store bought from Mc.Phillson Co. in 1911. In 1920's the building was expanded from 3000 sqft to 9000 sqft.</p>
+        <p>Once known as "The fashon empire of the rocky mountains!" Sometime in the 1950's the Neusteter Co. expanded again to its current size. </p>
+        <p> The Neusteter Co. closed its doors in the 1980's and began its second life as an 80 unit apartment building, one of the first few residential buildings downtown. The aprtments sold off into condos in the early 1990's. National Register of Historic Places 1987.</p>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Team Members -->
+    <h2>Our Team</h2>
+
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="/static/bitmoji-20181203094724.png" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Danny Marez</h4>
+            <h6 class="card-subtitle mb-2 text-muted">On-Site Building Manager</h6>
+            <p class="card-text">Resident Manager for 10+ years. Colorado native and avid outdoorsman.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#">manager@neusteters.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Team Member</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#">name@example.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Team Member</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#">name@example.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Our Customers -->
+    <h2>Our Residents</h2>
+    <div class="row">
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="/static/20160422_145411.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="/static/cattiestock.jpeg" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="/static/focstock.jpeg" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="/static/lambstock.jpeg" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="/static/dogstock.jpeg" alt="">
+      </div>
+      <div class="col-lg-2 col-sm-4 mb-4">
+        <img class="img-fluid" src="/static/catstock.jpeg" alt="">
+      </div>
+    </div>
+    <!-- /.row -->
+  {% endblock %}
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <div id="footer">
+      {% block footer %}
+        {{ super() }}
+      {% endblock %}
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Mail and Deliveres
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Mail</li>
+    </ol>
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Mail and deliveries</h2>
+        <p>Amazon, USPS, FedEx, On Track and UPS. Most delivery companies have a unique access code to gain entry to 
+          Neusteters. Sometimes the couriers will use the entry system to call you to gain access and sometimes they won't. 
+          We prefer that packages be taken up to the unit, but unfortunately that doesn't always happen and packages are 
+          sometimes left down in the mailbox hallway. New residents please remove name label in box and fill out USPS form.</p>
+          <ul>
+            <li>Important delivery? Inform the manager and he'll keep a look out for it</li>
+            <li>Extended vacation? Put a hold on your mail <a href="https://holdmail.usps.com/holdmail/" class="btn btn-secondary">USPS hold</a></li>
+            <li>Tired of all the junk mail? Redplum opt out link <a href="http://www.redplum.com/help/how-can-i-be-removed-from-your-mailing-list" class="btn btn-secondary">Opt out</a></li>
+            <li>Need a mail re-key? Contact manager <a href="/retail" class="btn btn-secondary">Re-Key</a></li>  
+          </ul>
+      </div>
+      <div class="col-lg-6">
+          <img class="img-fluid rounded" src="/static/20190618_100204.jpg" alt="">
+      </div>
+      </div>
+      <hr>
+    {% endblock %}
+  <!-- /.container -->
+  <!-- Footer -->
+  <div id="footer">
+    {% block footer %}
+      {{ super() }}
+    {% endblock %}
+  </div>
+ </body>
+
+</html>
+

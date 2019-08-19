@@ -1,0 +1,63 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">{% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Entry System
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Entry System</li>
+    </ol>
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Linear Entry System</h2>
+            <ul>
+            <li>Open entry door for friends and family</li>
+            <li>Dial 9 to unlock entry door remotly</li>
+            </ul>
+            <p>The Linear ACP00899 AE-500 Commercial Telephone Entry System - Two Doors is designed for use as a primary access control device for gated communities, parking garages, office buildings, 
+                apartments, dormitories, hotels/motels, commercial buildings and recreational facilities with up to 250 residents or users. Housed in a locked, 
+                rugged stainless steel faced enclosure, the AE-500 features a side-lit 12-key telephone style keypad with bright,
+                easy-to-read graphics, a backlit two-line directory display with a programmable welcome message, a built-in microphone, speaker, and provision for an optional color CCTV camera. 
+                The two relay output channels can be programmed to control electric door strikes, 
+                magnetic locks, door & gate operators, or barrier gates. The system utilizes hands-free, full duplex telephone 
+                communications between visitors and residents for granting access. The system can be programmed locally using the keypad,
+                remotely with a touch tone telephone, or remotely using a computer equipped with a modem and a web browser.</p>
+        </div>
+        <div class="col-lg-6">
+            <img class="img-fluid rounded" src="/static/20190616_133001.jpg" alt="">
+        </div>
+        </div>
+        <hr>
+           <!-- /.row -->
+    {% endblock %}
+  <!-- /.container -->
+  <!-- Footer -->
+  <div id="footer">
+    {% block footer %}
+      {{ super() }}
+    {% endblock %}
+  </div>
+ </body>
+
+</html>
+

@@ -1,0 +1,127 @@
+{% extends "/base.html" %}
+<!DOCTYPE html>
+<head>
+<html lang="en">
+{% block head %} 
+  {{ super() }}
+{% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+<div id="content">
+  {% block content %}
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Services
+      <small></small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Services</li>
+    </ol>
+
+    <!-- Image Header -->
+    <img class="img-fluid rounded mb-4" src="/static/20190515_123205.jpg" alt="">
+
+    <!-- Marketing Icons Section -->
+<div class="row">
+<div class="col-lg-4 mb-4">
+<div class="card h-100">
+<h4 class="card-header">Air Filters,Access fobs, Garage Door Opener, Mailbox re-key</h4>
+<div class="card-body">
+<p class="card-text">Two styles of filters, pleated and non-pleated. Two button garage openers. Mailbox re-key. If you would like to purchase one these items please address a check to Neusteters Building Condominiumn Association. Slip payment under office door. </p>
+</div>
+<div class="card-footer">
+<a href="/retail" class="btn btn-primary">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card h-100">
+<h4 class="card-header">Ladders, Loading Docks and Furniture Dollies</h4>
+<div class="card-body">
+<p class="card-text">Barrow a ladder. Two options for moving large items in and out of the building the Basement loading dock and Alley dock. Need a hand, truck?</p>
+</div>
+<div class="card-footer">
+<a href="/otherservice" class="btn btn-primary">Learn more</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card h-100">
+<h4 class="card-header">Entry System</h4>
+<div class="card-body">
+<p class="card-text">Add your last name to the entry system so friends and family can be buzzed in. System dails your phone, press 9 to unlock entry doors remotly. </p>
+</div>
+<div class="card-footer">
+<a href="/entrysys" class="btn btn-primary">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card h-100">
+<h4 class="card-header">Laundry</h4>
+<div class="card-body">
+<p class="card-text">Washers and dryers are owned by CSC ServiceWorks. Each floor in the building has two washers and two dryers, $1.75 to wash and $1.50 to dry. Credit card and quarters accepted.</p>
+</div>
+<div class="card-footer">
+<a href="/laundry" class="btn btn-primary">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card h-100">
+<h4 class="card-header">Mail, Percels and Deliveres</h4>
+<div class="card-body">
+<p class="card-text">Amazon, USPS, FedEx, On Track and UPS. Most delivery compaines have a unique access code to gain entry to Neusteters. We prefer that packeages be taken up to the unit, but unfortunatly that doesnt always happen and packages are left doewn in the mailbox hallway.</p>
+</div>
+<div class="card-footer">
+<a href="/mail" class="btn btn-primary">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card h-100">
+<h4 class="card-header">Cable and Internet</h4>
+<div class="card-body">
+  <p class="card-text">Direct TV is the only cable provider at Neusteters. Internet is through Wi-Fi Hood/Verso. Download speeds up to 50 Mbps! Upload speeds up to 10 Mbps! </p>
+</div>
+<div class="card-footer">
+  <a href="/internetdirectv" class="btn btn-primary">Learn More</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="card h-100">
+<h4 class="card-header">Trash</h4>
+<div class="card-body">
+<p class="card-text"><b>D</b> button in the freight elevator is the location of our trash/recycling area. Trash bins use to be located on each floor in the freight corridor but due to smells and the addition of the recycling program the've been moved.</p>
+</div>
+<div class="card-footer">
+<a href="/trash" class="btn btn-primary">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+    <!-- /.row -->
+  {% endblock %}
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <div id="footer">
+      {% block footer %}
+        {{ super() }}
+      {% endblock %}
+  </div>
+</body>
+
+</html>
